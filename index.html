@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="shortcut icon" href="photo2.png" type="image/png">
+    <link rel="stylesheet" href="input.css" type="text/css">
+</head>
+<body>
+    <navbar class="navbar">
+        <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGc+PHBhdGggZD0iTTEyNS42NDI0MiwyMS41aC03OS4yODEyNWwtMzYuMTQ4NjcsNjQuNTIxNWwzNy4wNzY3NSw2NC40Nzg1aDc4LjM0OTU4bDM2LjEzNDMzLC02NC41eiIgZmlsbD0iI2U0ODQxZCI+PC9wYXRoPjxwYXRoIGQ9Ik04Ni41NjYxNyw1MC4xNjY2N2gtMjUuNjQ5NXY3MS42NjY2N2gyNS42NDk1YzE5LjQ5MzMzLDAgMzUuMjY3MTcsLTE2LjAyODI1IDM1LjI2NzE3LC0zNS44MzMzM2MwLC0xOS44MDUwOCAtMTUuNzczODMsLTM1LjgzMzMzIC0zNS4yNjcxNywtMzUuODMzMzN6TTg2LDEwNy41aC0xMC43NXYtNDNoMTAuNzVjMTEuODYwODMsMCAyMS41LDkuNjM5MTcgMjEuNSwyMS41YzAsMTEuODYwODMgLTkuNjM5MTcsMjEuNSAtMjEuNSwyMS41eiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"/>
+         <div class="center-nav">
+             <a href="#home">HOME</a>
+             <a href="#about">ABOUT</a>
+             <a href="#contact">CONTACT</a>
+         </div>
+         
+         <div class="right-nav">
+             <a href="#get started" style="color: #d23f1e;" class="active">GET STARTED</a>
+         </div>
+    </navbar>
+
+    <div id="container">
+        <div class="left-bg">
+            <div id="flex-left">
+                <form id="survey-form">
+                <h1 id="title">
+                    Let Us Know More About You!
+                </h1>
+                <p id="description">
+                Tell us more about yourself and
+                <b style="color: #e4841d; font-weight: 700;">START</b> your<br>freelancing journey with us.<br><br>
+                </p>
+            
+                    <div class="email-name">
+                        <label for="name" id="name-label">
+                            Full Name:
+                            <input type="text" class="name" name="name" size="20" placeholder="Enter your name here" required>
+                        </label>
+        
+                        <label for="email" id="email-label">
+                            Email Address:
+                            <input type="email" class="email" name="email" size="20" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Enter email here">
+                            <br>
+                        </label>
+                    </div>
+
+
+                    <div class="birth-plan">
+                        <label for="number" id="number-label">
+                            Year of Birth:
+                            <input type="number" class="number" name="number" size="50" min="1940" max="2021" placeholder="Enter Year of Birth">
+                        </label>
+
+                        <label for="dropdown" class="dropdown-label">
+                            Select Account Plan:
+                            <select class="dropdown" name="dropdown" id="dropdown">
+                                <option value="Pro"> PRO Plan (50% OFF)</option>
+                                <option value="Basic"> Basic Plan</option>
+                                <option value="Free"> Free Plan</option>
+                                <br>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="gender">
+                        <label for="female">
+                            <br>
+                            Gender:
+                            <input type="radio" name="gender" id="female">
+                            Female
+                        </label>
+        
+                        <label for="male">
+                            <input type="radio" name="gender" id="male">
+                            Male
+                        </label>
+        
+                        <label for="no">
+                            <input type="radio" name="gender" id="no">
+                            I prefer not to say
+                        </label>
+                    </div>
+
+                    <div class="resume">
+                        <label for="resume">
+                            <br>
+                            Upload Your Resume <i style="color: #d23f1e;">(Optional) </i>
+                            <br>
+                            <input type="file" name="resume" id="resume" size="20">
+                        </label>
+                    </div>
+
+                    <div class="pass">
+                        <label for="password" id="password">
+                            <br>
+                            Enter Password:
+                            <br>
+                            <input type="password" name="password" placeholder="Enter password here" class="password" size="20" minlength="8" required>
+                            <br>
+                            <i style="font-size: 13px; color: grey;">
+                                *Minimum of 8 characters.
+                            </i>
+                        </label>
+                    </div>
+    
+                    <div class="checkboxes">
+                        <label for="terms">
+                            <br>
+                            <br>
+                            <input type="checkbox" name="terms" id="terms" required>
+                            I have <b style="color: #d23f1e;">read and agree</b> to the terms and conditions.
+                        </label>
+        
+                        <label for="newsletter">
+                            <br>
+                            <br>
+                            <input type="checkbox" name="newsletter" id="newsletter">
+                            I want to <b style="color: #d23f1e;">subscribe</b> to this platform's newsletter.
+                        </label>
+                    </div>
+
+                    <div id="comments">
+                        <label for="comments">
+                            <br><br>
+                            Any comments/feeddback about this page? <i style="color: #d23f1e;">(Optional)</i>
+                            <br><br>
+                            <textarea class="comments" name="comments" rows="5" cols="60"></textarea>
+                            <br><br>
+                        </label>
+                    </div>
+
+                    <div class="submit">
+                        <button type="submit" id="submit">
+                            Submit
+                        </button>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+
+        <div id="flex-right">
+            <img src="photo.png" class="photo">
+        </div>
+    </div>
+</body>
+</html>

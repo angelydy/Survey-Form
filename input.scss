@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+$orange: #e4841d;
+$red: #d23f1e;
+$white: white;
+$light-brown: rgba(255, 173, 143, 0.281);
+$font: 'Poppins', sans-serif;
+$web-bg1 :rgb(210,63,30);
+$web-bg2: linear-gradient(90deg, rgba(210,63,30,0.3818569664193803) 5%, rgba(255,193,129,0.4546860980720413) 40%);
+$shadow: 0px 0px 10px #00000028;
+$shadow2: 0px 0px 10px #00000021;
+$center: center;
+$left: left;
+$border: none;
+$outline : none;
+
+.first-4-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    font-family: $font;
+    margin: 0;
+    padding: 0;
+
+    body {
+        font-size: 15px;
+        background: $web-bg1;
+        background: $web-bg2;
+
+        ::placeholder {
+            padding: 10px;
+        }
+    }
+}
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+
+#flex-right {
+    text-align: $left;
+    width: 100%;
+    height: 200px;
+}
+
+#flex-left {
+    text-align: $left;
+    width: 100%;
+    height: 200px;
+    padding: 5%;
+}
+
+.left-bg {
+    background-color: #fff5f29a;
+    opacity: 80%;
+    height: 960px;
+    width: 170vh;
+    border-radius: 30px;
+    box-shadow: $shadow2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    font-weight: 700;
+    font-size: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #00000042;
+    align-items: center;
+    background-color: rgba(255, 248, 248, 0.192);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: $orange;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    color: $red;
+}
+
+#title {
+    font-weight: 900;
+    color: $red;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#title:hover {
+    color: black;
+}
+
+#description {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.name {
+    @extend .first-4-fields;
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+    border-style: none;
+    background-color: rgba(255, 173, 143, 0.281);
+    outline-style: none;
+}
+
+#email-label, #number-label, #name-label {
+    @extend .first-4-fields;
+}
+
+.email, .dropdown {
+    @extend .name;
+    height: 25px;
+}
+
+.number {
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+    border-style: none;
+    background-color: rgba(255, 173, 143, 0.281);
+    outline-style: none;
+}
+
+.name:hover {
+    border-style: solid;
+    border-color: $orange;
+    border-width: 1px;
+}
+
+.number:hover, .email:hover, .number:hover, .dropdown:hover, .password:hover, .comments:hover {
+    @extend .name:hover;
+}
+
+#resume::-webkit-file-upload-button {
+    cursor: pointer;
+    background-color: #e4841d80;
+    border-radius: 5px;
+    border-style: none;
+    height: 25px;  
+}
+
+#resume::-webkit-file-upload-button:hover {
+    color: $white;
+    background-color: $red;
+}
+
+.email-name {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.birth-plan {
+    @extend .email-name;
+}
+
+.pass {
+    text-align: $center;
+    margin: auto;
+}
+
+.submit, .resume, .gender, .checkboxes, #comments {
+    @extend .pass
+}
+
+.password {
+    border-radius: 5px;
+    width: 400px;
+    height: 35px;
+    border-style: $border;
+    background-color: $light-brown;
+    outline-style: $outline;
+}
+
+.comments {
+    border-radius: 10px;
+    border-style: $border;
+    background-color: $light-brown;
+    outline-style: $outline;
+}
+
+#dropdown {
+    border-radius: 5px;
+    border-style: none;
+}
+
+#submit {
+    font-weight: 500;
+    background-color: $red;
+    color: $white;
+    border-radius: 20px;
+    border-style: $border;
+    width: 100px;
+    height: 40px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: $orange;
+}
+
+.photo {
+    width: 550px;
+    height: auto;
+    position: absolute;
+    left: 57%;
+    top: 20%;
+}
+
+@media screen and (max-width:800px) {
+    * {
+        margin: 0;
+        padding: 0;
+
+        .navbar{
+            text-align: center;
+            display: block;
+        }
+    }
+
+    #container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0%;
+        padding: 0;
+    }
+
+    .left-bg {
+        max-width: 100%;
+        border-radius: 0;
+        height: 120vh;
+    }
+
+    #flex-left {
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #flex-right {
+        margin: 0;
+        padding: 0;
+    }
+
+    .photo {
+        position: absolute;
+        top: 140%;
+        width: 70%;
+        left: 10%;
+    }
+}

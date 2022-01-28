@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder {
+    padding: 10px;
+}
+
+body {
+    font-size: 15px;
+    background:rgb(210,63,30);
+    background: linear-gradient(90deg, rgba(210,63,30,0.3818569664193803) 5%, rgba(255,193,129,0.4546860980720413) 40%);
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    font-weight: 700;
+    font-size: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #00000028;
+    align-items: center;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #e4841d;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar a:hover {
+      color:#d23f1e;
+  }
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+
+#flex-right {
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+
+#flex-left {
+    text-align: left;
+    width: 100%;
+    height: 200px;
+    padding: 5%;
+}
+
+.left-bg {
+    background-color: #fff5f29a;
+    opacity: 80%;
+    height: 960px;
+    width: 170vh;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #00000021;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#title {
+    font-weight: 900;
+    color: #d23f1e;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#title:hover {
+    color: black;
+}
+
+#description {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+#resume::-webkit-file-upload-button {
+    cursor: pointer;
+    background-color: #e4841d80;
+    border-radius: 5px;
+    border-style: none;
+    height: 25px;
+}
+
+#resume::-webkit-file-upload-button:hover {
+    color: white;
+    background-color:#d23f1e;
+}
+
+.email-name, .birth-plan {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#name-label, .name, #email-label, .email, #number-label, .dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.name, .email {
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+    border-style: none;
+    background-color: rgba(255, 173, 143, 0.281);
+    outline-style: none;
+}
+
+.number {
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+    border-style: none;
+    background-color: rgba(255, 173, 143, 0.281);
+    outline-style: none;
+}
+
+.dropdown {
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    border-style: none;
+    background-color: rgba(255, 173, 143, 0.281);
+    outline-style: none;
+}
+
+.name:hover, .email:hover, .number:hover, .dropdown:hover, .password:hover {
+    border-style: solid;
+    border-color: #e4841d;
+    border-width: 1px;
+}
+
+.photo {
+    width: 550px;
+    height: auto;
+    position: absolute;
+    left: 57%;
+    top: 20%;
+}
+
+.password {
+    border-radius: 5px;
+    width: 400px;
+    height: 35px;
+    border-style: none;
+    background-color: rgba(255, 173, 143, 0.281);
+    outline-style: none;
+}
+
+.pass, .submit, .resume, .gender, .checkboxes, #comments {
+    text-align: center;
+    margin: auto;
+}
+
+.comments {
+border-radius: 10px;
+border-style: none;
+background-color: rgba(255, 173, 143, 0.281);
+outline-style: none;
+}
+
+.comments:hover {
+    border-style: solid;
+    border-color: #e4841d;
+    border-width: 1px;
+}
+
+#dropdown {
+    border-radius: 5px;
+    border-style: none;   
+}
+
+#submit {
+    font-weight: 500;
+    background-color: #d23f1e;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+    width: 100px;
+    height: 40px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #e4841d;
+}
+
+@media screen and (max-width:800px) {     
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0%;
+        padding: 0;
+    }
+
+    .left-bg {
+        max-width: 100%;
+        border-radius: 0;
+        height: 140vh;
+    }
+
+    .photo {
+        position: absolute;
+        top: 165%;
+        width: 70%;
+        left: 10%;
+    }
+
+    #flex-left {
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    #flex-right {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar{
+        text-align: center;
+        display: block;
+    }
+}
