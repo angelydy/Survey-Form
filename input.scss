@@ -234,10 +234,17 @@ $outline : none;
         }
     }
 
+    .navbar a{
+        text-align: center;
+        display: block;
+        width: 100%;
+        float: none;
+    }
+
     #container {
         flex-direction: column;
         width: 100%;
-        margin: 0%;
+        margin: 0;
         padding: 0;
     }
 
@@ -261,7 +268,7 @@ $outline : none;
 
     .photo {
         position: absolute;
-        top: 140%;
+        top: 165%;
         width: 70%;
         left: 10%;
     }
