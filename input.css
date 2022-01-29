@@ -201,6 +201,7 @@
   border-style: none;
   background-color: rgba(255, 173, 143, 0.281);
   outline-style: none;
+  resize: none;
 }
 
 #dropdown {
