@@ -99,7 +99,6 @@
 
 .navbar a {
   float: left;
-  display: block;
   color: #e4841d;
   text-align: center;
   padding: 20px;
@@ -141,6 +140,12 @@
   outline-style: none;
 }
 
+.name:hover, .email:hover, .dropdown:hover, .number:hover, .password:hover, .comments:hover {
+  border-style: solid;
+  border-color: #e4841d;
+  border-width: 1px;
+}
+
 .email, .dropdown {
   height: 25px;
 }
@@ -152,12 +157,6 @@
   border-style: none;
   background-color: rgba(255, 173, 143, 0.281);
   outline-style: none;
-}
-
-.name:hover, .email:hover, .dropdown:hover, .number:hover, .password:hover, .comments:hover {
-  border-style: solid;
-  border-color: #e4841d;
-  border-width: 1px;
 }
 
 #resume::-webkit-file-upload-button {
@@ -241,7 +240,7 @@
     text-align: center;
     display: block;
   }
-  .navbar a {
+  * .navbar a {
     text-align: center;
     display: block;
     width: 100%;

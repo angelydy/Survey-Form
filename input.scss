@@ -75,20 +75,19 @@ $outline : none;
     box-shadow: 0px 0px 10px #00000042;
     align-items: center;
     background-color: rgba(255, 248, 248, 0.192);
-}
 
-.navbar a {
-    float: left;
-    display: block;
-    color: $orange;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 17px;
-}
+    a {
+        float: left;
+        color: $orange;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 17px;
 
-.navbar a:hover {
-    color: $red;
+        &:hover {
+            color: $red;
+        }
+    }
 }
 
 #title {
@@ -97,10 +96,10 @@ $outline : none;
     font-size: 40px;
     display: flex;
     justify-content: space-around;
-}
 
-#title:hover {
-    color: black;
+    &:hover {
+        color: black;
+    }
 }
 
 #description {
@@ -117,6 +116,12 @@ $outline : none;
     border-style: none;
     background-color: rgba(255, 173, 143, 0.281);
     outline-style: none;
+
+    &:hover {
+        border-style: solid;
+        border-color: $orange;
+        border-width: 1px;
+    }
 }
 
 #email-label, #number-label, #name-label {
@@ -137,12 +142,6 @@ $outline : none;
     outline-style: none;
 }
 
-.name:hover {
-    border-style: solid;
-    border-color: $orange;
-    border-width: 1px;
-}
-
 .number:hover, .email:hover, .number:hover, .dropdown:hover, .password:hover, .comments:hover {
     @extend .name:hover;
 }
@@ -153,11 +152,11 @@ $outline : none;
     border-radius: 5px;
     border-style: none;
     height: 25px;  
-}
 
-#resume::-webkit-file-upload-button:hover {
-    color: $white;
-    background-color: $red;
+    &:hover {
+        color: $white;
+        background-color: $red;
+    }
 }
 
 .email-name {
@@ -208,11 +207,11 @@ $outline : none;
     border-style: $border;
     width: 100px;
     height: 40px;
-}
 
-#submit:hover {
-    cursor: pointer;
-    background-color: $orange;
+        &:hover {
+            cursor: pointer;
+            background-color: $orange;
+    }
 }
 
 .photo {
@@ -231,14 +230,14 @@ $outline : none;
         .navbar{
             text-align: center;
             display: block;
-        }
-    }
 
-    .navbar a{
-        text-align: center;
-        display: block;
-        width: 100%;
-        float: none;
+            a{
+                text-align: center;
+                display: block;
+                width: 100%;
+                float: none;
+            }
+        }
     }
 
     #container {
